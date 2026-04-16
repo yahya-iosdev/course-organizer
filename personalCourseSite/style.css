@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f2f2f7;
+    color: #1c1c1e;
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100vh = 100% of the Viewport Height (your screen) */
+}
+
+header {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);/*lifted shadow */
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #007aff;
+    font-weight: 600;
+    transition: 0.5s;/*time for transition between blue and dark blue!*/
+
+}
+nav a:hover{
+    color: #0056b3;/* Darker blue when you move the mouse over it */
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;/*Puts Title on left, Links on right */
+    align-items: center;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+}
+
+section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Soft shadow */
+}
+section h1 {
+    color: #007aff;
+    margin-bottom: 15px;/*add space below title */
+}
+section p {
+    color: #3a3a3c;
+    font-size: 1.1rem;
+
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;/*pushes the footer to the very bottom of the screen */
+    color: #8e8e93;
+    font-size: 0.9rem;
+}
+footer strong {
+    color: #007aff; /* Makes my name in blue*/
+}
+
+/*---------------------------------------------------------------------*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 15px;
+    box-align: left;
+    border-bottom: 1px solid #e5e5ea;
+
+
+}
+th {
+    background-color: #007aff;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f2f2f7;
+}
+tbody tr {
+    transition: background-color 0.5s;
+
+}
+
+/* --- (Add Course) --- */
+
+form {
+    display: flex;
+    flex-direction: column;/*Stacks the inputs vertically */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #1c1c1e;
+    cursor: pointer;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #d1d1d6;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit; /* Forces inputs to use our system font */
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007aff;
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);/* Creates a soft blue glowing ring */
+}
+
+button {
+    background-color: #007aff;
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.4s;
+}
+button:hover{
+    background-color: #0056b3;
+}
